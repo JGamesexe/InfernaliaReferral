@@ -1,0 +1,39 @@
+
+#If false, plugin will not start
+Enable: false
+
+#MySQL Connection Data.
+MySQL:
+    Ip: 'localhost'
+    Port: '3306'
+    User: 'user'
+    Password: 'password'
+    Database: 'referrals'
+
+#Options and Rules for referral
+ReferralOptions:
+    #How many tops will have
+    HowManyTops: 5
+    #Referral base weight
+    ReferralWeight: 1
+    #When reach greater level than this referral will be blocked
+    LevelCap: 5
+    #Bonus per level, also given when level up [Level,Bonus]
+    LevelBonus:
+      - '[5,1]'
+      - '[15,2]'
+      - '[25,3]'
+    #Award when someone referral [Bukkit_Material,Amount]
+    DoReferralAward:
+      - '[EMERALD,15]'
+    #Award when someone was referenced [Bukkit_Material,Amount]
+    ReceiveReferralAward:
+      - '[EMERALD_BLOCK,1]'
+      - '[EMERALD,36]'
+    #Color that will be displayed on top according player rank [Rank,Chat_Color]
+    RankColors:
+      - '[1,GOLD]'
+      - '[2,YELLOW]'
+      - '[3,YELLOW]'
+      - '[4,GRAY]'
+      - '[5,GRAY]'

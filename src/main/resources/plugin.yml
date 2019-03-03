@@ -1,0 +1,6 @@
+main: com.jgamesexe.infernaliareferral.Main
+name: InternaliaReferral
+version: 1.0-SNAPSHOT
+author: JGamesexe
+commands:
+  referral:
